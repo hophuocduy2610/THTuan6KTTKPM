@@ -10,7 +10,7 @@ public class PublisherController {
     @Autowired
     private PublishSinhVienService sinhVienService;
 
-    @PostMapping(path = "/sendsv/{masv}/{tensv}/{lop}")
+    @PostMapping(path = "/guisinhvien/{masv}/{tensv}/{lop}")
     public String publishSinhVien(@RequestParam("masv") String maSV, @RequestParam("tensv") String tenSV, @RequestParam("lop") String lop){
         sinhVienService.publishSinhVien(maSV, tenSV, lop);
         return "Publish successfull";

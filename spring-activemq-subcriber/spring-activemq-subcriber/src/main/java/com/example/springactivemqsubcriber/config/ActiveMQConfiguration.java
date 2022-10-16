@@ -12,7 +12,7 @@ import org.springframework.jms.support.converter.MessageType;
 @EnableJms
 @Configuration
 public class ActiveMQConfiguration {
-    public static final String SINHVIEN_TOPIC = "sinhvien-topic";
+    public static final String SINHVIEN_TOPIC = "sv-topic";
     @Bean
     public JmsListenerContainerFactory<?> topicListenerFactory(){
         DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
